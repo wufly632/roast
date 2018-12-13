@@ -25,6 +25,7 @@ if (token) {
 import Vue from 'vue';
 import router from './routes.js'
 
-new Vue({
-    router
-}).$mount('#app');
+const app = new Vue({
+    el: '#app',
+    router,
+});
