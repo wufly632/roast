@@ -17,4 +17,9 @@ class AppController
     {
         return view('app');
     }
+
+    public function getLogin()
+    {
+        return view('login');
+    }
 }
