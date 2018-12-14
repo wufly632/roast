@@ -8,6 +8,7 @@ export default {
      * GET /api/v1/cafes
      */
     getCafes: function(){
+        console.log(axios.get( ROAST_CONFIG.API_URL + '/cafes' ));
         return axios.get( ROAST_CONFIG.API_URL + '/cafes' );
     },
     /**

@@ -41,7 +41,7 @@ class AuthenticationController extends Controller
 
             $newUser->name        = $socialUser->getName() ?: 'wufly';
             $newUser->email       = $socialUser->getEmail() == '' ? '' : $socialUser->getEmail();
-            $newUser->avatar      = $socialUser->getAvatar();
+            $newUser->avatar      = $socialUser->getAvatar() ?: 'aaa';
             $newUser->password    = '';
             $newUser->provider    = $account;
             $newUser->provider_id = $socialUser->getId();
@@ -53,7 +53,7 @@ class AuthenticationController extends Controller
         // 手动登录该用户
         Auth::login( $user );
 
-        // 登录成功后将用户重定向到首页
-        return redirect('/');
+        // 登录成    功后将用户重定向到首页
+        return redirect('/#/home');
     }
 }
