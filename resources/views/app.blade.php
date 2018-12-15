@@ -20,6 +20,6 @@
         <router-view></router-view>
     </div>
 
-    <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/app.js') }}?v=8"></script>
 </body>
 </html>

@@ -74,4 +74,4 @@ export const cafes = {
             return state.cafe;
         }
     }
-}
+};
